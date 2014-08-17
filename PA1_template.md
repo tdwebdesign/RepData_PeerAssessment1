@@ -58,6 +58,8 @@ daily_act[daily_act$steps == max(daily_act$steps),]$interval
 
 ## Imputing missing values
 
+The rounded mean for each corresponding interval is substituted for each missing value.
+
 
 ```r
 nrow(data[is.na(data$steps),])
